@@ -809,14 +809,108 @@ footer p{
         height: 340px;
     }
 }
-/* note making media */
-@media(max-width:396px){
-    #editor-section{
-        min-height: 250px;
+
+
+/* create-page media */
+/* Responsive Design */
+@media (max-width: 250px) {
+    #editor-section {
+        padding: 10px;
     }
-   
+
+    #toolbar button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    #post-title {
+        font-size: 16px;
+    }
+
+    #editor {
+        font-size: 14px;
+    }
+
+    #publish-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
+@media (max-width: 480px) {
+    #new-post-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    #toolbar button {
+        flex: 1 1 calc(50% - 10px);
+        text-align: center;
+    }
+
+    #editor {
+        min-height: 150px;
+    }
+}
+
+/* note making media */
+
+/* Responsive Styles */
+@media (max-width: 350px) {
+    .notes {
+        padding: 15px;
+    }
+
+    notes h2 {
+        font-size: 20px;
+    }
+
+    #noteInput {
+        height: 80px;
+        font-size: 14px;
+    }
+
+    #saveNoteBtn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    #notesList li {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .notes {
+        padding: 10px;
+    }
+
+    .notes h2 {
+        font-size: 18px;
+    }
+
+    #noteInput {
+        height: 60px;
+        font-size: 12px;
+    }
+
+    #saveNoteBtn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    #notesList li {
+        font-size: 10px;
+        padding: 6px;
+    }
+}
 @media (max-width: 396px){
     .home-title{
         font-size: 2rem;
