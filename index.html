@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Box-icon -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">Blogger <span>Site</span></a>
+        <a href="#" class="login" id="signupBtn">Sign Up</a>
+         </div>
+    </header>
+    <!-- Sign Up from -->
+    <div id="signupForm" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <section class="home" id="home"></section>
+
+    <!-- About  Section -->
+    <section class="about container" id="about">
+      <div class="contentBx">
+        <h2 class="titleText">Catch up with the trending topics</h2>
+        <p class="title-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eos
+          consequuntur voluptate dolorum totam provident ducimus cupiditate
+          dolore doloribus repellat. Saepe ad fugit similique quis quam. Odio
+          suscipit incidunt distinctio.
+          <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+          blanditiis libero pariatur ipsum suscipit voluptates aut, repellendus
+          quos dolor autem, natus laboriosam consectetur maxime cumque, sunt
+          magni optio? Veritatis, ea?
+        </p>
+        <a href="#" class="btn2">Read more</a>
+      </div>
+      <div class="imgBx">
+        <img src="images/aboutpagre.avif" alt="" class="fitBg" />
+      </div>
+    </section>
+
+    <!-- create blog -->
+    <div class="button-container">
+      <button id="new-post-btn">Create My Blog</button>
+  </div>
+  <main>
+      <section id="editor-section" class="hidden">
+          <input type="text" id="post-title" placeholder="Enter post title">
+          <div id="toolbar">
+              <button data-command="bold">Bold</button>
+              <button data-command="italic">Italic</button>
+              <button data-command="underline">Underline</button>
+              <button data-command="h1">H1</button>
+              <button data-command="h2">H2</button>
+              <button data-command="p">Paragraph</button>
+          </div>
+          <div id="editor" contenteditable="true"></div>
+          <button id="publish-btn">Publish</button>
+      </section>
+      <section id="posts-container">
+          <!-- Published posts will appear here -->
+      </section>
+ 
+
+      <!-- Filter post  -->
+
+    <div class="post-filter container">
+      <span class="filter-item active-filter">All</span>
+      <span class="filter-item" class="Tech">Tech</span>
+      <span class="filter-item" class="Food">Food</span>
+      <span class="filter-item" class="Music">Music</span>
+    </div>
+
+    <div class="post container">
+      <!-- Post 1 -->
+      <div class="post-box tech">
+        <a
+          href="https://techcrunch.com/2025/01/09/google-searches-for-deleting-facebook-instagram-explode-after-meta-ends-fact-checking/"
+          ><img src="images/Google.jpg" alt="" class="post-img"
+        /></a>
+        <h2 class="category Tech">Tech</h2>
+        <a href="#" class="post-title"
+          >Google searches for deleting Facebook, Instagram explode after Meta
+          ends fact-checking</a
+        >
+        <span class="post-date">11 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 2 -->
+      <div class="post-box food">
+        <a
+          href="https://techcrunch.com/2025/01/09/mark-zuckerberg-gave-metas-llama-team-the-ok-to-train-on-copyrighted-works-filing-claims/"
+          ><img src="images/markjk.webp" alt="" class="post-img"
+        /></a>
+        <h2 class="category Tech">Tech</h2>
+        <a href="#" class="post-title"
+          >Mark Zuckerberg gave Meta’s Llama team the OK to train on copyrighted
+          works, filing claims</a
+        >
+        <span class="post-date">12 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 3 -->
+      <div class="post-box Food">
+        <a href="https://pinchofyum.com/detox-rainbow-roll-ups-peanut-sauce"
+          ><img src="images/Rainbow-Rolls-.jpg" alt="" class="post-img"
+        /></a>
+        <h2 class="category Food">Food</h2>
+        <a href="#" class="post-title"
+          >Detox Rainbow Roll-Ups with Peanut Sauce</a
+        >
+        <span class="post-date">13 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 4 -->
+      <div class="post-box news">
+        <a
+          href="https://www.digitaltrends.com/mobile/does-one-plus-13-have-120hz-refresh-rate/"
+          ><img src="images/oneplus123.webp" alt="" class="post-img"
+        /></a>
+        <h2 class="category Tech">Tech</h2>
+        <a href="#" class="post-title"
+          >Does the OnePlus 13 have a 120Hz refresh rate?</a
+        >
+        <span class="post-date">16 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 5 -->
+      <div class="post-box tech">
+        <img src="images/Tortilla-Soup-.jpg" alt="" class="post-img" />
+        <h2 class="category Food">Food</h2>
+        <a
+          href="https://pinchofyum.com/instant-pot-sweet-potato-tortilla-soup"
+          class="post-title"
+          >Instant Pot Sweet Potato Tortilla Soup</a
+        >
+        <span class="post-date">14 JAN 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 6 -->
+      <div class="post-box news">
+        <img
+          src="images/Pankaj-Mullick-RC-Boral-Khemchand-Prakash-Ghulam-Haider.png"
+          alt=""
+          class="post-img"
+        />
+        <h2 class="category Music">Music</h2>
+        <a
+          href="https://www.songsofyore.com/best-songs-of-1941-wrap-up-4/"
+          class="post-title"
+          >Best songs of 1941: Wrap Up 4</a
+        >
+        <span class="post-date">12 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 7 -->
+      <div class="post-box tech">
+        <img src="images/music.jpeg" alt="" class="post-img" />
+        <h2 class="category Music">Music</h2>
+        <a
+          href="https://www.songsofyore.com/kalyanji-anandji-2-0-their-best-songs-for-other-male-singers/"
+          class="post-title"
+          >Kalyanji-Anandji 2.0: Their best songs for ‘other’ male singers</a
+        >
+        <span class="post-date">11 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 8 -->
+      <div class="post-box news">
+        <img src="images/Dilip-Kumar-Rafi.jpg" alt="" class="post-img" />
+        <h2 class="category Music">Music</h2>
+        <a
+          href="https://www.songsofyore.com/safarnama-in-pursuit-of-two-iconic-lives/"
+          class="post-title"
+          >SAFARNAMA: In Pursuit of Two Iconic Lives</a
+        >
+        <span class="post-date">16 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+      <!-- Post 9 -->
+      <div class="post-box food">
+        <img src="images/img10.jpg" alt="" class="post-img" />
+        <h2 class="category Food">Food</h2>
+        <a
+          href="https://pinchofyum.com/butter-cauliflower-and-chickpeas-with-mint-cilantro-sauce"
+          class="post-title"
+          >Butter Cauliflower and Chickpeas with Mint Cilantro Sauce</a
+        >
+        <span class="post-date">12 Jan 2025</span>
+        <p class="post-description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur,
+          similique, rerum excepturi harum, vitae facilis corrupti vel modi
+          debitis est perferendis aut quasi ea unde repudiandae iste architecto.
+          Corporis, voluptates.
+        </p>
+        <div class="profile">
+          <img src="images/ram.png" alt="" class="profile-img" />
+          <span class="profile-name">Ram</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NOTE TAKING SECTION -->
+
+    <section class="note-taking notes">
+      <h2>Make Notes of Your Ideas</h2>
+      <textarea id="noteInput" placeholder="Jot down your ideas..."></textarea>
+      <button id="saveNoteBtn">Save Note</button>
+
+      <ul id="notesList"></ul>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="sec aboutus">
+          <h2>About Us</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
+            quisquam minus quo illo numquam vel incidunt pariatur hic commodi
+            expedita tempora praesentium at iure fugiat ea, quam laborum aperiam
+            veritatis.
+          </p>
+          <ul class="sci">
+            <li>
+              <a href="#"><i class="bx bxl-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="bx bxl-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sec quicklinks">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <div class="sec contactBx">
+          <h2>Contact Info</h2>
+          <ul class="info">
+            <li>
+              <span><i class="bx bxs-map"></i></span>
+              <span>India</span>
+            </li>
+            <li>
+              <span><i class="bx bx-envelope"></i></span>
+              <p>
+                <a href="mailto:codemyhobby9@gmail.com"
+                  >somyajain20048@gmail.com</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
